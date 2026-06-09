@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ticketfront-deployment
+  labels:
+    app: ticketfront
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ticketfront
+  template:
+    metadata:
+      labels:
+        app: ticketfront
+    spec:
+      containers:
+      - name: ticketfront
+        image: avi03/ticketfrontend:v1
+        ports:
+        - containerPort: 80
+        env:
+        - name: VITE_API_URL
+          valueFrom:
+            configMapKeyRef:
+              name: ticketback-config
+              key: VITE_API_URL

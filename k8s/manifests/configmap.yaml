@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ticketback-config
+data:
+  PORT: "8000"
+  MONGODB: "mongourl"
+  DB_NAME: "databsename"
+  JWT_SECRET: "secret"
