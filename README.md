@@ -265,4 +265,4 @@ ArgoCD detects Helm changes and automatically synchronizes deployments to Amazon
 
 **Avinash Shetty**
 
-DevOps Engineer | AWS | Kubernetes | Docker | Helm | GitHub Actions | ArgoCD
+DevOps  | AWS | Kubernetes | Docker | Helm | GitHub Actions | ArgoCD
